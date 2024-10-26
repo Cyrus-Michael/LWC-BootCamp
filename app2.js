@@ -46,3 +46,25 @@ let myDetailsCopy = { ...myDetails };
 myDetailsCopy.age = 75,
 console.log("myDetailsCopy", myDetailsCopy);
 console.log("myDetails", myDetails);
+
+
+//Destructuring
+console.log("destructuring");
+let myFruits = ["Apple","Cherry","Banana", "Guava"];
+let[myFruits1, myFruits2, myFruits3, myFruits4] = myFruits;
+console.log("myFruits1", myFruits1);
+console.log("myFruits2", myFruits2);
+console.log("myFruits3", myFruits3);
+console.log("myFruits4", myFruits4);
+
+let [fav1, , ...rest] = myFruits;
+console.log("fav1", fav1);
+//console.log("fav2", fav2);
+console.log("rest", rest);
+
+
+let myDet = { fname: "Ankit", lname: "Jain", doy: 1950};
+let { fname: Firstname, doy } = myDet;
+console.log("fname", Firstname);
+//console.log("lname", lname);
+console.log("doy", doy);
